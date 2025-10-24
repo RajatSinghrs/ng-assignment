@@ -6,7 +6,6 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
-  // title = 'joyz-tree';
 
   tree: { [key: string]: string[] } = {
     "a": ["b", "c"],
@@ -16,7 +15,7 @@ export class AppComponent {
     "f": ["j", "k"]
   };
 
-  treeChild(sub: string): string[] {
+  treeChild(sub: string) {
     return this.tree[sub] || [];
   }
 
